@@ -12,8 +12,8 @@ public class FizzBuzzMain
 	FizzBuzzFactory fizzBuzzFactory = new FizzBuzzFactory();
 	for (int index = 1; index <= FizzBuzzConstants.maxNumbers; index++)
 	{
-	    IFizzBuzz fizzBuzzCase = fizzBuzzFactory.determineFizzBuzz(index);
-	    System.out.println(fizzBuzzCase.getFizzBuzz(index));
+	    FizzBuzz fizzBuzzCase = fizzBuzzFactory.determineFizzBuzz(index);
+	    System.out.println(fizzBuzzCase.getFizzBuzz());
 	}
     }
 }

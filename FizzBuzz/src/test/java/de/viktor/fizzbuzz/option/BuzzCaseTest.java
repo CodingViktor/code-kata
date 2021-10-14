@@ -13,21 +13,21 @@ import org.junit.jupiter.api.Test;
 
 import de.viktor.fizzbuzz.FizzBuzzConstants;
 
-class FizzTest
+class BuzzCaseTest
 {
-    private Fizz fizz;
+    private BuzzCase buzzCase;
     
     @BeforeEach
     void setUp()
     {
-	fizz = new Fizz();
+	buzzCase = new BuzzCase();
     }    
     
     @Test
     void testGetFizzBuzzOptionBuzz()
     {
-	String actualString = fizz.getFizzBuzz(99);
+	String actualString = buzzCase.getFizzBuzz();
 	
-	assertThat(actualString, is(FizzBuzzConstants.fizz));
+	assertThat(actualString, is(FizzBuzzConstants.buzz));
     }
 }

@@ -7,30 +7,30 @@ package de.viktor.fizzbuzz;
 
 import static de.viktor.fizzbuzz.FizzBuzzConstants.*;
 
-import de.viktor.fizzbuzz.option.Buzz;
-import de.viktor.fizzbuzz.option.Fizz;
-import de.viktor.fizzbuzz.option.FizzBuzz;
-import de.viktor.fizzbuzz.option.Number;
+import de.viktor.fizzbuzz.option.BuzzCase;
+import de.viktor.fizzbuzz.option.FizzCase;
+import de.viktor.fizzbuzz.option.FizzBuzzCase;
+import de.viktor.fizzbuzz.option.NumberCase;
 
 public class FizzBuzzFactory
 {
-    public IFizzBuzz determineFizzBuzz(int number)
+    public FizzBuzz determineFizzBuzz(int number)
     {
 	if (isFizzBuzz(number))
 	{
-	    return new FizzBuzz();
+	    return new FizzBuzzCase();
 	}
 	else if (isFizz(number))
 	{
-	    return new Fizz();
+	    return new FizzCase();
 	}
 	else if (isBuzz(number))
 	{
-	    return new Buzz();
+	    return new BuzzCase();
 	}
 	else
 	{
-	    return new Number();
+	    return new NumberCase(number);
 	}
     }
 

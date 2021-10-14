@@ -11,23 +11,20 @@ import static org.junit.Assert.assertThat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import de.viktor.fizzbuzz.FizzBuzzConstants;
-
-class BuzzTest
+class NumberCaseTest
 {
-    private Buzz buzz;
-    
+    private NumberCase numberCase;
+
     @BeforeEach
     void setUp()
     {
-	buzz = new Buzz();
-    }    
-    
+	numberCase = new NumberCase(99);
+    }
+
     @Test
     void testGetFizzBuzzOptionBuzz()
     {
-	String actualString = buzz.getFizzBuzz(99);
-	
-	assertThat(actualString, is(FizzBuzzConstants.buzz));
+	String actualString = numberCase.getFizzBuzz();
+	assertThat(actualString, is("99"));
     }
 }

@@ -6,12 +6,12 @@
 package de.viktor.fizzbuzz.option;
 
 import de.viktor.fizzbuzz.FizzBuzzConstants;
-import de.viktor.fizzbuzz.IFizzBuzz;
+import de.viktor.fizzbuzz.FizzBuzz;
 
-public class FizzBuzz implements IFizzBuzz
+public class FizzBuzzCase implements FizzBuzz
 {
     @Override
-    public String getFizzBuzz(int number)
+    public String getFizzBuzz()
     {
 	return FizzBuzzConstants.fizzBuzz;
     }

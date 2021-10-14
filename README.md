@@ -1,5 +1,5 @@
-# What is a kata?
-A coding kata is a smaller exercise in programming which helps programmers to improve their skills through practice and repetition.
+# What is a code kata?
+A code kata is a smaller exercise in programming which helps programmers to improve their skills through practice and repetition.
 
 # Where is the description of the task?
 You can find the task description inside the project folder of each project. 

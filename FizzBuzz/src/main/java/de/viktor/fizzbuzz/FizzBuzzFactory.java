@@ -34,12 +34,12 @@ public class FizzBuzzFactory
 	}
     }
 
-    private static boolean isFizzBuzz(int number)
+    private boolean isFizzBuzz(int number)
     {
 	return (number % fizzNumber) == 0 && (number % buzzNumber) == 0 ? true : false;
     }
 
-    private static boolean isFizz(int number)
+    private boolean isFizz(int number)
     {
 	if ((number % fizzNumber) == 0 || containsDigits(number, fizzNumber))
 	{
@@ -48,7 +48,7 @@ public class FizzBuzzFactory
 	return false;
     }
 
-    private static boolean isBuzz(int number)
+    private boolean isBuzz(int number)
     {
 	if ((number % buzzNumber) == 0 || containsDigits(number, buzzNumber))
 	{
@@ -57,11 +57,11 @@ public class FizzBuzzFactory
 	return false;
     }
 
-    private static boolean containsDigits(int number, int containsNumber)
+    private boolean containsDigits(int number, int expectedNumber)
     {
 	String convertedNumber	       = String.valueOf(number);
-	String convertedContainsNumber = String.valueOf(containsNumber);
+	String convertedExpectedNumber = String.valueOf(expectedNumber);
 	
-	return convertedNumber.contains(convertedContainsNumber) ? true : false;
+	return convertedNumber.contains(convertedExpectedNumber) ? true : false;
     }
 }

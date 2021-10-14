@@ -61,6 +61,7 @@ public class FizzBuzzFactory
     {
 	String convertedNumber	       = String.valueOf(number);
 	String convertedContainsNumber = String.valueOf(containsNumber);
+	
 	return convertedNumber.contains(convertedContainsNumber) ? true : false;
     }
 }

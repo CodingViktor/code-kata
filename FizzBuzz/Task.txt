@@ -1,0 +1,29 @@
+{==============================[ Function Kata "FizzBuzz ]==============================}
+
+
+
+1.) Write a function that returns the numbers from 1 to 100. Some numbers should be translated:
+> For multiples of 3, output "Fizz".
+> For multiples of 5 output "Buzz".
+> For multiples of 3 and 5 output "FizzBuzz".
+
+> Example output:
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+
+2.) Extension:
+> "Fizz" should also be returned if the number contains a 3 as a digit, e.g. 13.
+> "Buzz" should also be returned if the number contains a 5 as a digit, e.g. 52.
+
+
+
+=========================================================================================
